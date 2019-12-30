@@ -1,0 +1,110 @@
+header{
+	background: url(../img/header-image.png) center top no-repeat;
+	background-size: cover;
+	height: 800px;
+}
+
+.stats{
+	position: relative;
+	background-color: transparent;
+	display: block;
+	height: 320px;
+}
+
+.stats:before{
+	content: '';
+	height: 7px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background-color: #303030;
+}
+
+.stats .column{
+	width: 320px;
+	height: 320px;
+	position: relative;
+	float: left;
+}
+
+.stats .column:before,
+.stats .column:after{
+	content: '';
+	height: 100%;
+	width: 2px;
+	position: absolute;
+	top: 0;
+	background: url(../img/vertical-bar.png);
+	border: none;
+}
+
+.stats .column:before{
+	left: -1px;
+}
+
+.stats .column:after{
+	right: 0;
+}
+
+.stats .column h3{
+	display: flex;
+	justify-content: center;
+	font-size: 24px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.stats .column i{
+	display: flex;
+	justify-content: center;
+	font-size: 12px;
+	color: #fff;
+	margin: 7px 0 35px 0;
+}
+
+.stats .column img{
+	position: absolute;
+	bottom: 0;
+	transition: .3s;
+}
+
+.stats .column:nth-child(2) img{
+	left: 23.5px;
+}
+
+.stats .column:hover img{
+	transform: translateY(-5px);
+}
+
+.ipad-img{
+	position: relative;
+	padding-top: 118px;
+	height: 420px;
+	box-sizing: border-box;
+	border-bottom: 30px solid #e96302;
+	color: #a2a2a2;
+	background: #0e0e0e url('../img/radial-shadow.png') center no-repeat;
+}
+
+.ipad-img .container{
+	position: relative;
+}
+
+.ipad-img h3{
+	padding-left: 48px;
+	width: 272px;
+	background: url(../img/plus-sign.png) left top no-repeat;
+}
+
+.ipad-img p{
+	font-size: 14px;
+	width: 272px;
+	margin: 30px 0 70px 48px;
+}
+
+.ipad-img img{
+	position: absolute;
+	bottom: -11px;
+	right: 0;
+}
