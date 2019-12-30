@@ -1,7 +1,20 @@
 header{
-	background: url(../img/header-image.png) center top no-repeat;
-	background-size: cover;
+	position: relative;
+	background: url(../img/header-image.png) center no-repeat;
 	height: 800px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.hide{
+	display: none;
+	opacity: 0;
+}
+
+.show{
+	display: show;
+	opacity: 1;
+	transition: opacity .3s;
 }
 
 .border{
@@ -203,6 +216,7 @@ header{
 	position: absolute;
 	top: 70px;
 	cursor: pointer;
+	transition: .3s;
 }
 
 .latest-products .catalog .prev-next-btns:nth-child(1){
@@ -283,4 +297,126 @@ header{
 .deliver-quality .four-paragraphs p:nth-child(1),
 .deliver-quality .four-paragraphs p:nth-child(2){
 	color: #a2a2a2;
+}
+
+.tab-section{
+	position: relative;
+	margin-top: 120px;
+}
+
+.tab-content{
+	width: 100%;
+	height: 450px;
+	background-color: #1a1a1a;
+	color: #a2a2a2;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.tb1 img{
+	position: absolute;
+	bottom: 50px;
+	left: 40px;
+}
+
+.tb1 .right{
+	float: right;
+	width: 300px;
+	margin: 90px 170px 0 0;
+	font-weight: normal;
+}
+
+.tb1 h3{
+	width: 300px;
+	margin: 0 0 36px -68px;
+	padding-left: 68px;
+	background: url(../img/plus-sign.png) no-repeat;
+	font-size: 20px;
+	color: #a2a2a2;
+	background-position-y: -5px;
+	height: 36px;
+}
+
+.tb1 p{
+	font-size: 14px;
+	margin-bottom: 40px;
+}
+
+.tb1 a{
+	color: #fff;
+	background-color: #e96302;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 4px;
+}
+
+.tb2{
+	padding: 15px;
+	position: relative;
+}
+
+.tb2 h3{
+	margin: 0 0 36px 0;
+	padding-left: 60px;
+	background: url(../img/plus-sign.png) no-repeat;
+	font-size: 20px;
+	color: #a2a2a2;
+	display: flex;
+	align-items: center;
+	height: 36px;
+}
+
+.tb2 p{
+	font-size: 14px;
+	margin: 0 0 10px 0;
+}
+
+.tb2 a{
+	padding-left: 30px;
+	background-image: url(../img/download.png);
+	background-repeat: no-repeat;
+	color: #e96302;
+}
+
+.tab-section ul{
+	list-style: none;
+	font-weight: normal;
+	display: flex;
+	color: #fff;
+	padding: 0;
+	margin: 5px 0;
+}
+
+.tab-section ul li{
+	width: 315px;
+	margin-right: 5px;
+	background-color: #101010;
+	background-image: url(../img/plus-transparent.png);
+	background-repeat: no-repeat;
+	background-position: 20px 50%;
+}
+
+.tab-section ul li:last-child {
+	width: 320px;
+	margin: 0;
+}
+
+.tab-section ul li div{
+	margin-left: 70px;
+	padding-top: 18px;
+}
+
+.tab-section ul li div a{
+	font-size: 18px;
+	color: #fff;
+}
+
+.tab-section ul li div p{
+	margin: 5px 0 20px 0;
+	color: #fff;
+}
+
+.tab-section ul .active{
+	background-color: #e96302;
+	transition: .3s;
 }
