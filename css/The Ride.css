@@ -6,21 +6,6 @@ header{
 	background-attachment: fixed;
 }
 
-.hide{
-	display: none;
-	opacity: 0;
-}
-
-.show{
-	display: show;
-	opacity: 1;
-	transition: opacity .3s;
-}
-
-.border{
-	border-top: 1px solid #a2a2a2;
-}
-
 .stats{
 	position: relative;
 	background-color: transparent;
@@ -233,7 +218,8 @@ header{
 	margin-top: 30px;
 }
 
-.column-layout h3{
+.column-layout h3,
+.deliver-quality h3{
 	margin: 45px 0 0 0;
 	padding-left: 70px;
 	background: url(../img/plus-sign.png) no-repeat;
@@ -269,21 +255,14 @@ header{
 	box-shadow: 0 0 10px #161616;
 }
 
+.column-layout .paragraph .read-more-btn:active{
+	background-color: #c95302;
+}
+
 .deliver-quality{
 	position: relative;
 	height: 254px;
 	margin-top: 60px;
-}
-
-.deliver-quality h3{
-	margin: 45px 0 0 0;
-	padding-left: 70px;
-	background: url(../img/plus-sign.png) no-repeat;
-	font-size: 20px;
-	color: #a2a2a2;
-	text-transform: uppercase;
-	background-position-y: -5px;
-	height: 36px;
 }
 
 .deliver-quality .four-paragraphs{
@@ -302,6 +281,7 @@ header{
 .tab-section{
 	position: relative;
 	margin-top: 120px;
+	margin-bottom: 20px;
 }
 
 .tab-content{
@@ -350,12 +330,18 @@ header{
 	border-radius: 4px;
 }
 
-.tb2{
+.tb1 a:active{
+	background-color: #c95302;
+}
+
+.tb2, 
+.tb3{
 	padding: 15px;
 	position: relative;
 }
 
-.tb2 h3{
+.tb2 h3,
+.tb3 h3{
 	margin: 0 0 36px 0;
 	padding-left: 60px;
 	background: url(../img/plus-sign.png) no-repeat;
@@ -366,16 +352,36 @@ header{
 	height: 36px;
 }
 
-.tb2 p{
+.tb2 p,
+.tb3 p{
 	font-size: 14px;
-	margin: 0 0 10px 0;
+	width: 850px;
+	box-sizing: border-box;
+	margin: 0 auto 30px auto;
 }
 
 .tb2 a{
 	padding-left: 30px;
+	margin-left: 40px;
 	background-image: url(../img/download.png);
 	background-repeat: no-repeat;
 	color: #e96302;
+}
+.tb2 a:active{
+	color: #c95302;
+}
+
+.tb3 p{
+	padding-left: 80px;
+	padding-bottom: 20px;
+	background-image: url(../img/testimonial.png);
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.tb3 p:nth-child(3){
+	padding: 0 80px 20px 0;
+	background-position: top right;
 }
 
 .tab-section ul{
@@ -389,7 +395,7 @@ header{
 
 .tab-section ul li{
 	width: 315px;
-	margin-right: 5px;
+	margin-right: 7.5px;
 	background-color: #101010;
 	background-image: url(../img/plus-transparent.png);
 	background-repeat: no-repeat;
@@ -397,7 +403,6 @@ header{
 }
 
 .tab-section ul li:last-child {
-	width: 320px;
 	margin: 0;
 }
 

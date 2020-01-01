@@ -32,7 +32,7 @@ window.addEventListener('scroll', function() {
 	}
 });
 
-//Переключатели влево м вправо
+//Переключатели влево и вправо
 
 let btns = document.querySelectorAll('.prev-next-btns'),
 	catalog = document.querySelector('.latest-products .catalog .items ul'),
@@ -112,4 +112,18 @@ tabButtons.forEach(function (item) {
 			}
 		}
 	});
+});
+
+//Ввод email
+let form = document.getElementsByTagName('form')[0],
+	input = document.querySelector('form input');
+
+input.addEventListener('focus', function() {
+	form.style.background = "linear-gradient(to bottom, #0d0d0d, #191919)";
+	input.placeholder = '';
+});
+
+input.addEventListener('blur', function() {
+	form.style.background = "linear-gradient(to bottom, #090909, #0d0d0d)";
+	input.placeholder = 'Enter email';
 });
