@@ -3,7 +3,6 @@ body{
 	padding: 0;
 	font-family: sans-serif;
 	background-color: #fafafa;
-	height: 3000px;
 }
 
 a{
@@ -89,9 +88,8 @@ header h3{
 	header nav{
 		position: absolute;
 		top: 80px;
-		left: -300px;
+		left: -500px;
 		height: 1300px;
-		width: 300px;
 		background-color: rgba(50, 50, 50, 1);
 		box-shadow: 0 0px 10px #222 inset;
 		transition: left .5s cubic-bezier(.3, 1, .75, 1);
@@ -194,6 +192,7 @@ section{
 	position: relative;
 	top: 120px;
 	margin-top: 30px;
+	margin-bottom: 120px;
 	max-height: 800px;
 }
 
@@ -235,32 +234,4 @@ section p{
 	section .container{
 		margin: 0 10px;
 	}
-}
-
-div.add-btn{
-	width: 200px;
-	font-size: 30px;
-	background-color: #f0f0f0;
-	box-shadow: 0 0 10px #dadada;
-	padding: 20px;
-	padding-right: 55px;
-	color: #333;
-	margin: 150px auto;
-	position: relative;
-	cursor: pointer;
-}
-
-div.add-btn:before,
-div.add-btn:after{
-	content: '';
-	position: absolute;
-	top: 35px;
-	right: 15px;
-	height: 3px;
-	width: 30px;
-	background-color: #333;
-}
-
-div.add-btn:after{
-	transform: rotate(90deg);
 }

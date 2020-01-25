@@ -1,22 +1,21 @@
 'use strict';
 
-let burger = document.querySelector('.burger');
+let burger = document.querySelector('.burger'),
+	navBar = document.querySelector('header nav');
 
-burger.addEventListener('click', function() {
+if (window.innerWidth <= 500) {
+	navBar.style.width = window.innerWidth + 'px';
+}
+
+burger.addEventListener('click', function () {
 	burger.classList.toggle('arrow');
 })
 
-let section = document.querySelectorAll('section')[0],
-	addButton = document.querySelector('.add-btn');
-
-let newSection = [], i = 0;
-
-addButton.addEventListener('click', function() {
-	i++;
-
-	newSection[i] = document.createElement('section');
-
-	newSection[i].innerHTML = section.innerHTML;
-
-	document.body.insertBefore(newSection[i], addButton);
+window.addEventListener('resize', function() {
+	if (window.innerWidth > 500) {
+		burger.classList.remove('arrow');
+		navBar.style.width = '308px';
+	} else {
+		navBar.style.width = window.innerWidth + 'px';
+	}
 })
