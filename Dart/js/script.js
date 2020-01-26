@@ -33,8 +33,6 @@ close.addEventListener('click', function() {
 	overlay.classList.remove('active');
 });
 
-let input = document.querySelectorAll('.popup form input');
-
 let more = document.querySelectorAll('#services .part div:first-child span'),
 	part = document.querySelectorAll('#services .part');
 

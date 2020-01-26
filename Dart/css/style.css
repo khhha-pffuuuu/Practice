@@ -120,7 +120,7 @@ h3{
 	justify-content: space-around;
 	flex-wrap: wrap;
 	position: relative;
-	padding-top: 30px;
+	padding: 30px 50px;
 }
 
 .popup form input{
@@ -128,7 +128,7 @@ h3{
 	color: #061e37;
 	font-size: 14px;
 	display: flex;
-	width: 180px;
+	width: 160px;
 	height: 36px;
 	float: left;
 	outline: none;
@@ -141,7 +141,7 @@ h3{
 }
 
 .popup form input:nth-child(3){
-	width: calc(100% - 45px);
+	width: calc(100% - 15px);
 }
 
 .popup form input::-webkit-input-placeholder{
@@ -164,10 +164,12 @@ h3{
 
 .popup form button{
 	margin-top: 60px;
-	padding: 10px;
-	width: 200px;
-	background-color: #4FF385;
+	padding: 20px 60px;
+	background-color: #1de9b6;
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+	border-radius: 5px;
 	color: #fff;
+	text-transform: uppercase;
 	font-size: 20px;
 	cursor: pointer;
 }
